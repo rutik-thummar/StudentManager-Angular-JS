@@ -1,0 +1,15 @@
+<div>
+    <button type="button" class="btn btn-primary" (click)="gotolist()">Back To Student-List</button> &nbsp;&nbsp;
+    <table class="table table-light">
+
+        <div *ngIf="student">
+            <div>
+                <label><b>Id : </b></label> {{student.id}}
+            </div>
+            <div>
+                <label><b>Name: </b></label> {{student.name}}
+            </div>
+        </div>
+    </table>
+
+</div>

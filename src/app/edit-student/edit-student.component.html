@@ -1,0 +1,11 @@
+<div class="container">
+    <h2>Edit Student</h2>
+    <form #addstudentform="ngForm" (ngSubmit)="editstudentformsubmit()">
+        <div class="form-group" *ngIf="student">
+            <label for="name">Student Name:</label>
+            <input type="text" class="form-control" [(ngModel)]="student.name" name="name">
+        </div>
+        <button type="button" class="btn btn-primary" (click)="gotolist()">Back</button> &nbsp;&nbsp;
+        <button type="submit" class="btn btn-success">Update</button> &nbsp;&nbsp;
+    </form>
+</div>

@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Add New Student</h2>
+    <form (ngSubmit)="addstudentformsubmit()">
+        <!-- <div class="form-group">
+            <label for="id">id:</label>
+            <input type="text" class="form-control" required [(ngModel)] name="id">
+        </div> -->
+        <!-- 
+        <div class="form-group">
+            <label for="name">Student Name:</label>
+            <input type="text" class="form-control" required [(ngModel)]="student.name" name="name">
+        </div> -->
+        <div class="table table-sm">
+            <table border="2px">
+                <tr>
+                    <th>Name</th>
+                    <td><input type="text" id="name" name="name" [(ngModel)]="student.name" name="name"> </td>
+                </tr>
+            </table>
+        </div>
+        <button type="button" class="btn btn-primary" (click)="gotolist()">Back</button> &nbsp;&nbsp;
+        <button type="submit" class="btn btn-success">Submit</button> &nbsp;&nbsp;
+    </form>
+</div>

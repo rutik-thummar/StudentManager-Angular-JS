@@ -1,0 +1,20 @@
+<div>
+    <button type="button" class="btn btn-primary" (click)="goToLoginPage()">Back To Login Page</button> &nbsp;&nbsp;
+    <table class="table table-light">
+        <thead>
+            <th>Id</th>
+            <th>Student-Name</th>
+            <th colspan="3"></th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{student.id}}</td>
+                <td>{{student.name}}</td>
+                <td><button type="button" class="btn btn-primary" (click)="goToEditPage(student.id)">Edit</button> &nbsp;&nbsp;
+                <button type="button" class="btn btn-info" (click)="goToViewPage(student.id)" >View</button> &nbsp;&nbsp;
+                <button type="button" class="btn btn-danger" (click)="deleteStudent(student.id)">Delete</button> &nbsp;&nbsp;</td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" class="btn btn-success" (click)="goToAddPage()">Add New Student</button>
+</div>
